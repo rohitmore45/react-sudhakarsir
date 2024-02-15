@@ -6,12 +6,14 @@ import '../node_modules/bootstrap/dist/css/bootstrap.css'
 import '../node_modules/bootstrap-icons/font/bootstrap-icons.css'
 import reportWebVitals from './reportWebVitals';
 import { LoginComponent } from './components/login/login.component'
+import { NetflixIndex } from './netflix/netflix-index/netflix-index';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     {/* <App /> */}
-    <LoginComponent />
+    {/* <LoginComponent /> */}
+    <NetflixIndex /> 
   </React.StrictMode>
 );
 
