@@ -12,6 +12,7 @@ import { DataBindingComponent } from './components/data-binding/data-binding.com
 import { UseStateComponent } from './components/useState demo/use-state.component';
 import { NasaComponent } from './components/NASA-Api/nasa.component';
 import { NasaPhotosCardComponent } from './components/NASA-Api/nasa-photos-card.component';
+import { FakeStoreComponent } from './components/fakestore-api/fakestore.component';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -22,7 +23,8 @@ root.render(
     {/* <DataBindingComponent /> */}
     {/* <UseStateComponent /> */}
     {/* <NasaComponent /> */}
-    <NasaPhotosCardComponent />
+    {/* <NasaPhotosCardComponent /> */}
+    <FakeStoreComponent />
   </React.StrictMode>
 );
 
