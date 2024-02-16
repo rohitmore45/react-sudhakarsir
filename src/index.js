@@ -8,6 +8,7 @@ import reportWebVitals from './reportWebVitals';
 import { LoginComponent } from './components/login/login.component'
 import { NetflixIndex } from './netflix/netflix-index/netflix-index';
 import { DataBindingComponent } from './data-binding/data-binding.component';
+import { UseStateComponent } from './useState demo/use-state.component';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -15,7 +16,8 @@ root.render(
     {/* <App /> */}
     {/* <LoginComponent /> */}
     {/* <NetflixIndex />  */}
-    <DataBindingComponent />
+    {/* <DataBindingComponent /> */}
+    <UseStateComponent />
   </React.StrictMode>
 );
 
