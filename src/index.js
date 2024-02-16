@@ -11,6 +11,7 @@ import { NetflixIndex } from './netflix/netflix-index/netflix-index';
 import { DataBindingComponent } from './components/data-binding/data-binding.component';
 import { UseStateComponent } from './components/useState demo/use-state.component';
 import { NasaComponent } from './components/NASA-Api/nasa.component';
+import { NasaPhotosCardComponent } from './components/NASA-Api/nasa-photos-card.component';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -20,7 +21,8 @@ root.render(
     {/* <NetflixIndex />  */}
     {/* <DataBindingComponent /> */}
     {/* <UseStateComponent /> */}
-    <NasaComponent />
+    {/* <NasaComponent /> */}
+    <NasaPhotosCardComponent />
   </React.StrictMode>
 );
 

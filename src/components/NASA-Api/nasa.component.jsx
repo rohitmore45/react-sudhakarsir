@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import "./nasa.component.css";
 
 export function NasaComponent() {
   const [mars, setMars] = useState({ photos: [] });
@@ -10,7 +9,7 @@ export function NasaComponent() {
     )
       .then((response) => response.json())
       .then((data) => {
-        console.log(data);
+        // console.log(data);
         setMars(data);
       });
   }, []);
@@ -33,8 +32,13 @@ export function NasaComponent() {
               <tr key={item.id}>
                 <td>{item.id}</td>
                 <td>
-                  <a href={item.img_src} target="_blank">
-                    <img src={item.img_src} height={250} width={300} />
+                  <a href={item.img_src} target="_blank" rel="noreferrer">
+                    <img
+                      src={item.img_src}
+                      height={250}
+                      width={300}
+                      alt="Mars_photos"
+                    />
                   </a>
                 </td>
                 <td>{item.camera.full_name}</td>
