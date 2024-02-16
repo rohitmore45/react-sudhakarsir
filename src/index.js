@@ -5,10 +5,11 @@ import App from './App';
 import '../node_modules/bootstrap/dist/css/bootstrap.css'
 import '../node_modules/bootstrap-icons/font/bootstrap-icons.css'
 import reportWebVitals from './reportWebVitals';
+
 import { LoginComponent } from './components/login/login.component'
 import { NetflixIndex } from './netflix/netflix-index/netflix-index';
-import { DataBindingComponent } from './data-binding/data-binding.component';
-import { UseStateComponent } from './useState demo/use-state.component';
+import { DataBindingComponent } from './components/data-binding/data-binding.component';
+import { UseStateComponent } from './components/useState demo/use-state.component';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -17,7 +18,7 @@ root.render(
     {/* <LoginComponent /> */}
     {/* <NetflixIndex />  */}
     {/* <DataBindingComponent /> */}
-    <UseStateComponent />
+    {/* <UseStateComponent /> */}
   </React.StrictMode>
 );
 
