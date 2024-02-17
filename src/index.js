@@ -14,6 +14,7 @@ import { UseStateComponent } from './components/useState demo/use-state.componen
 import { NasaComponent } from './components/NASA-Api/nasa.component';
 import { NasaPhotosCardComponent } from './components/NASA-Api/nasa-photos-card.component';
 import { FakeStoreComponent } from './components/fakestore-api/fakestore.component';
+import { StyleBinding } from './components/style-binding/style.binding.jsx';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -25,7 +26,8 @@ root.render(
     {/* <UseStateComponent /> */}
     {/* <NasaComponent /> */}
     {/* <NasaPhotosCardComponent /> */}
-    <FakeStoreComponent />
+    {/* <FakeStoreComponent /> */}
+    <StyleBinding />
   </React.StrictMode>
 );
 
