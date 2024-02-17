@@ -15,6 +15,8 @@ import { NasaComponent } from './components/NASA-Api/nasa.component';
 import { NasaPhotosCardComponent } from './components/NASA-Api/nasa-photos-card.component';
 import { FakeStoreComponent } from './components/fakestore-api/fakestore.component';
 import { StyleBinding } from './components/style-binding/style.binding.jsx';
+import { ClassBinding } from './components/class-binding/class.binding.jsx';
+import { ClassBindingDemo } from './components/class-binding-demo/class.bindingdemo.jsx';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -27,7 +29,9 @@ root.render(
     {/* <NasaComponent /> */}
     {/* <NasaPhotosCardComponent /> */}
     {/* <FakeStoreComponent /> */}
-    <StyleBinding />
+    {/* <StyleBinding /> */}
+    {/* <ClassBinding /> */}
+    <ClassBindingDemo />
   </React.StrictMode>
 );
 
