@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import "./fakestore.component.css";
 import $ from "jquery";
+import axios from "axios";
 
 export function FakeStoreComponent() {
   const [categories, setCategories] = useState([]);
@@ -31,20 +32,33 @@ export function FakeStoreComponent() {
     }
   }
   function LoadCategories() {
-    //fetching using jquery method ajax
-    $.ajax({
-      method: "get",
-      url: "https://fakestoreapi.com/products/categories",
-      success: (response) => {
-        response.unshift("all");
-        setCategories(response);
+    // fetching api using axios library
+    axios
+      .get("https://fakestoreapi.com/products/categories")
+      .then((response) => {
         // console.log(response);
-      },
-      error: (response) => {
-        // console.log(response);
-      },
-    });
+        response.data.unshift("all");
+        setCategories(response.data);
+      })
+      .then((err) => {
+        // console.log(err);
+      });
 
+    //fetching using jquery method ajax
+    // $.ajax({
+    //   method: "get",
+    //   url: "https://fakestoreapi.com/products/categories",
+    //   success: (response) => {
+    //     response.unshift("all");
+    //     setCategories(response);
+    //     // console.log(response);
+    //   },
+    //   error: (response) => {
+    //     // console.log(response);
+    //   },
+    // });
+
+    // fetching api using javascript fetch method
     // fetch("https://fakestoreapi.com/products/categories")
     //   .then((response) => response.json())
     //   .then((data) => {
