@@ -17,6 +17,9 @@ import { FakeStoreComponent } from './components/fakestore-api/fakestore.compone
 import { StyleBinding } from './components/style-binding/style.binding.jsx';
 import { ClassBinding } from './components/class-binding/class.binding.jsx';
 import { ClassBindingDemo } from './components/class-binding-demo/class.bindingdemo.jsx';
+import { EventBinding } from './components/event-binding/event-binding.jsx';
+import { MouseDemo } from './components/mouse-demo/mouse-demo.jsx';
+import { OnMouseOut } from './components/mouse-demo/onmouse-out.jsx';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -31,11 +34,11 @@ root.render(
     {/* <FakeStoreComponent /> */}
     {/* <StyleBinding /> */}
     {/* <ClassBinding /> */}
-    <ClassBindingDemo />
+    {/* <ClassBindingDemo /> */}
+    {/* <EventBinding /> */}
+    {/* <MouseDemo /> */}
+    <OnMouseOut />
   </React.StrictMode>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();

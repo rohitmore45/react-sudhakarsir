@@ -1,0 +1,7 @@
+.preview-image:hover {
+  transform: scale(1.5);
+  transition: 2s;
+}
+.preview-image {
+  transition: 2s;
+}

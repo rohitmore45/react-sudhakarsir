@@ -7,7 +7,7 @@
   height: 768px;
   background-color: rgba(0, 0, 0, 0.6);
 }
-main {
+.main {
   height: 600px;
   display: flex;
   align-items: center;

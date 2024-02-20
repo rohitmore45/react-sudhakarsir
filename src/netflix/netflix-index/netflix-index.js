@@ -6,7 +6,7 @@ export function NetflixIndex() {
     <div id='banner'>
       <div id='shade'>
         <NetflixHeader />
-        <main>
+        <main className='main'>
           <div>
             <NetflixMain />
           </div>
